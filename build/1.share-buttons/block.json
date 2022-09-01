@@ -1,0 +1,38 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 2,
+  "name": "nobs/share-buttons",
+  "version": "0.1.0",
+  "title": "Nobs - Share Buttons",
+  "category": "widgets",
+  "icon": "share",
+  "description": "A list of buttons activated through the admin menu of WordPress.",
+  "keywords": [
+    "buttons",
+    "sharing",
+    "social",
+    "network",
+    "twitter",
+    "facebook",
+    "linkedin"
+  ],
+  "supports": {
+    "html": false,
+    "align": [
+      "left",
+      "right",
+      "center"
+    ]
+  },
+  "attributes": {
+    "content": {
+      "type": "string",
+      "source": "html",
+      "selector": ".content"
+    }
+  },
+  "textdomain": "nobs-share-buttons-blocks",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css"
+}
